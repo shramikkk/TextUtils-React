@@ -94,13 +94,6 @@ function App() {
 
       </Router>
 
-      <div className="container my-5">
-                <TextBox
-                  showAlert={showAlert}
-                  mode={Mode}
-                  heading="Enter the text to analyze"
-                />
-              </div>
 
               
     </>

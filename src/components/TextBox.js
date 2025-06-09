@@ -53,11 +53,11 @@ export default function TextBox(props) {
                 ></textarea>
                 <label htmlFor="floatingTextarea"></label>
             </div>
-            <button className='btn btn-primary m-3 'onClick={handleUpClick} >Convert to UpperCase</button>
-            <button className='btn btn-primary m-3'onClick={handleLowClick} >Convert to LowerCase</button>
-            <button className='btn btn-primary m-3' onClick={handleClearText}>Clear Text</button>
-            <button className='btn btn-primary m-3' onClick={handleBoldText}>Convert text to Bold</button>
-            <button className='btn btn-primary m-3' onClick={handleItalicText}>Convert text to Italic</button>
+            <button disabled={text.length===0} className='btn btn-primary m-3 'onClick={handleUpClick} >Convert to UpperCase</button>
+            <button disabled={text.length===0} className='btn btn-primary m-3'onClick={handleLowClick} >Convert to LowerCase</button>
+            <button disabled={text.length===0} className='btn btn-primary m-3' onClick={handleClearText}>Clear Text</button>
+            <button disabled={text.length===0} className='btn btn-primary m-3' onClick={handleBoldText}>Convert text to Bold</button>
+            <button disabled={text.length===0} className='btn btn-primary m-3' onClick={handleItalicText}>Convert text to Italic</button>
         </div>
 
         <div className="container my-2" style={{color:props.mode === 'blue' ? 'black' : props.mode === 'light'? 'black' : 'white'}}>
