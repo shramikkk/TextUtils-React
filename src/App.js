@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
  import TextBox from "./components/TextBox";
-// import About from "./components/About";
+ import About from "./components/About";
 import Alert from "./components/Alert";
-// import Main from "./components/Main";
+ import Main from "./components/Main";
 
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [Mode, setMode] = useState("light");
@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      {/* <Router> */}
+      <Router>
         <Navbar
           h4="TextUtils"
           aboutTextUtils="About"
@@ -58,7 +58,7 @@ function App() {
           toggleBlueMode={toggleBlueMode}
         ></Navbar>
         <Alert alert={alert} />
-{/* 
+
         <Routes>
           <Route
             exact path="/about"
@@ -92,7 +92,7 @@ function App() {
           />
         </Routes>
 
-      </Router> */}
+      </Router>
 
       <div className="container my-5">
                 <TextBox
